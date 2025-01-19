@@ -1,0 +1,37 @@
+/* Google font link */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Outfit', serif;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    background-color: ghostwhite;
+}
+
+#sidebar{
+    width: 90px;
+    min-width: 90px;
+    transition: all 0.25s ease-in-out;
+    background-color: #009739;
+    display: flex;
+    flex-direction: column;
+}
