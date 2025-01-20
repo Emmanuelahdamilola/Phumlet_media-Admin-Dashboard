@@ -29,3 +29,4 @@ new Chart(document.getElementById("doughnut-chart"), {
       }
     }
 });
+

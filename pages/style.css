@@ -1,0 +1,90 @@
+/* Google font link */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Outfit', serif;
+}
+
+.container {
+    min-height: 80vh; 
+    min-width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 2rem;
+}
+
+.wrapper {
+    width: 100%; 
+    max-width: 1000px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    background-color: ghostwhite;
+    padding: .725rem 0;
+}
+
+aside{
+    width: 260px;
+    min-width: 160px;
+    transition: all 0.25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    background-color: #009739;
+}
+
+
+.sidebar-nav{
+    padding: 0.7rem 0;
+    flex: 11 auto;
+    z-index: 10;
+}
+
+a.sidebar-link{
+    padding: .625rem 1.625rem;
+    color: whitesmoke;
+    display: block;
+    white-space: nowrap;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.5rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover{
+    background-color: rgba(49, 255, 128, 0.095);
+    border-left: 3px solid #05e25a;
+}
+
+.profile-img{
+    height: 80px;
+    width: 80px;
+}
+
+h3{
+    color: ghostwhite;
+    font-style: 1.2rem;
+    padding-top: 10px;
+}

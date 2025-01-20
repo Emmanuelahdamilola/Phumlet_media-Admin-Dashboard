@@ -38,7 +38,7 @@ body{
 
 #sidebar.expand{
     width: 260px;
-    min-width: 260px;
+    min-width: 180px;
 }
 
 #sidebar:not(.expand) .sidebar-logo,
@@ -113,17 +113,17 @@ a.sidebar-link:hover{
     position: relative;
 }
 
-#sidebar:not(.expand).sidebar-item.sidebar-dropdown{
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown{
     position: absolute;
     top: 0;
     left: 90px;
-    /* background-color: #009739; */
+    background-color: #009739;
     min-width: 15rem;
     padding: 0;
     display: none;
 }
 
-#sidebar:not(.expand).sidebar-item:hover .has-dropdown +.sidebar-dropdown{
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown{
     display: block;
     max-height: 15em;
     width: 100%;
@@ -191,7 +191,7 @@ a.sidebar-link:hover{
     min-width: 200px;
 }
 
-.avatar{
+.profile-img{
     height: 40px;
     width: 40px;
 }

@@ -48,6 +48,7 @@
               <span>Task</span>
             </a>
           </li>
+          <!-- nav link with dropdown -->
           <li class="sidebar-item">
             <a
               href="#"
@@ -73,6 +74,8 @@
               </li>
             </ul>
           </li>
+
+          <!-- nav link with multi step dropdown -->
           <li class="sidebar-item">
             <a
               href="#"
@@ -95,14 +98,14 @@
                   href="#"
                   class="sidebar-link collapsed has-dropdown"
                   data-bs-toggle="collapse"
-                  data-bs-target="#multi-2"
+                  data-bs-target="#multi-two"
                   aria-expanded="false"
-                  aria-controls="multi-2"
+                  aria-controls="multi-two"
                 >
                   Two Links
                 </a>
                 <ul
-                  id="multi-2"
+                  id="multi-two"
                   class="sidebar-dropdown list-unstyled collapse"
                 >
                   <li class="sidebar-item">
@@ -122,7 +125,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="#" class="sidebar-link" id="settings-link">
               <i class="bx bxs-cog"></i>
               <span>Settings</span>
             </a>
@@ -162,7 +165,7 @@
                 <a href="#" class="nav-icon pe-md-0" data-bs-toggle="dropdown">
                   <img
                     src="icon/profile.png"
-                    class="img-fluid avatar"
+                    class="img-fluid profile-img"
                     alt="profile-img"
                   />
                 </a>
@@ -178,7 +181,7 @@
                     <span>Help Center</span>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a href="#" class="dropdown-item">
+                  <a href="#" class="dropdown-item" id="settings-link">
                     <i class="bx bx-cog"></i>
                     <span>Settings</span>
                   </a>
