@@ -25,6 +25,7 @@ body{
 .wrapper {
     width: 100%; 
     max-width: 1000px; 
+    height: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     border-radius: 10px;
     overflow: hidden;
@@ -91,20 +92,18 @@ h3{
 
 
 @media(max-width:768px){
-    .container {
-        max-height: auto;  
-        padding: 1rem;
+    .container {  
+       padding: 1rem;
     }
     
     .wrapper {
+        height: 50%;
         width: 100%; 
         min-width: 100%; 
     }
     
     .main{
-        display: flex;
-        flex-direction: column;
-        max-height: auto;
+        min-height: 50vh;
     }
     
     aside{
