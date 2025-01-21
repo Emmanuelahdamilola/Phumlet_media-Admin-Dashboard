@@ -30,3 +30,15 @@ new Chart(document.getElementById("doughnut-chart"), {
     }
 });
 
+
+
+async function loadContent(url) {
+  const response = await fetch(url);
+  const content = await response.text();
+  document.querySelector('.main').innerHTML = content;
+}
+
+document.getElementById('table-link').addEventListener('click', function (e) {
+  e.preventDefault();
+  loadContent('table.html');
+});

@@ -231,6 +231,10 @@ tr.highlight th{
     color: whitesmoke;
 }
 
+.tr-highlight th{
+    background-color: #d9468f;
+    color: whitesmoke; 
+}
 .content{
     flex: 11 auto;
 }
