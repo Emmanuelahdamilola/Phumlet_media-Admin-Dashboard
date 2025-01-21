@@ -110,7 +110,7 @@
               <div>
                 <h3 class="fw-bold fs-4 my-3">Recent Activity</h3>
               </div>
-              <table class="table table-striped">
+              <table class="table table-striped shadow">
                 <thead>
                   <tr class="highlight">
                     <th scope="col">S/N</th>
@@ -215,64 +215,72 @@
             </div>
             <div class="col-12 col-md-4">
               <h3 class="fw-bold fs-4 my-3">Reports Overview</h3>
-              <table class="table table-striped">
-                <thead>
-                  <tr class="tr-highlight">
-                    <th scope="col">
-                      Profile
-                    </th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><img
-                      src="icon/profile.png"
-                      class="img-fluid profile-img"
-                      alt="profile-img"
-                    /></td>
-                    <td>John Joe</td>
-                    <td>$25,000</td>
-                  </tr>
-                  <tr>
-                    <td><img
-                      src="icon/profile.png"
-                      class="img-fluid profile-img"
-                      alt="profile-img"
-                    /></td>
-                    <td>John Joe</td>
-                    <td>$25,000</td>
-                  </tr>
-                  <tr>
-                    <td><img
-                      src="icon/profile.png"
-                      class="img-fluid profile-img"
-                      alt="profile-img"
-                    /></td>
-                    <td>John Joe</td>
-                    <td>$25,000</td>
-                  </tr>
-                  <tr>
-                    <td><img
-                      src="icon/profile.png"
-                      class="img-fluid profile-img"
-                      alt="profile-img"
-                    /></td>
-                    <td>John Joe</td>
-                    <td>$25,000</td>
-                  </tr>
-                  <tr>
-                    <td><img
-                      src="icon/profile.png"
-                      class="img-fluid profile-img"
-                      alt="profile-img"
-                    /></td>
-                    <td>John Joe</td>
-                    <td>$25,000</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="col-12">
+                <h5 class="fw-bold fs-4 my-3">New Members</h5>
+                <table class="table shadow">
+                  <thead>
+                    <tr class="tr-highlight">
+                      <th scope="col">
+                        Profile
+                      </th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img
+                        src="icon/profile.png"
+                        class="img-fluid profile-img"
+                        alt="profile-img"
+                      /></td>
+                      <td>John Joe</td>
+                      <td>$25,000</td>
+                    </tr>
+                    <tr>
+                      <td><img
+                        src="icon/profile.png"
+                        class="img-fluid profile-img"
+                        alt="profile-img"
+                      /></td>
+                      <td>John Joe</td>
+                      <td>$25,000</td>
+                    </tr>
+                    <tr>
+                      <td><img
+                        src="icon/profile.png"
+                        class="img-fluid profile-img"
+                        alt="profile-img"
+                      /></td>
+                      <td>John Joe</td>
+                      <td>$25,000</td>
+                    </tr>
+                    <tr>
+                      <td><img
+                        src="icon/profile.png"
+                        class="img-fluid profile-img"
+                        alt="profile-img"
+                      /></td>
+                      <td>John Joe</td>
+                      <td>$25,000</td>
+                    </tr>
+                    <tr>
+                      <td><img
+                        src="icon/profile.png"
+                        class="img-fluid profile-img"
+                        alt="profile-img"
+                      /></td>
+                      <td>John Joe</td>
+                      <td>$25,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-12 pt-3">
+                <h5 class="fw-bold fs-4 my-3">Chart Flow</h5>
+                <canvas id="bar-chart" width="800" height="450"></canvas>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -306,13 +314,35 @@
   </div>
 
 <!-- Bootstrap JS -->
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-></script>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
 <script>
+  // Bar chart
+new Chart(document.getElementById("bar-chart"), {
+  type: 'bar',
+  data: {
+    labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+    datasets: [
+      {
+        label: "Population (millions)",
+        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+        data: [2478,5267,734,784,433]
+      }
+    ]
+  },
+  options: {
+    legend: { display: false },
+    title: {
+      display: true,
+      text: 'Predicted world population (millions) in 2050'
+    }
+  }
+});
     // Page content data
     const pages = {
         account: `

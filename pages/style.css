@@ -88,3 +88,59 @@ h3{
     font-style: 1.2rem;
     padding-top: 10px;
 }
+
+
+@media(max-width:768px){
+    .container {
+        max-height: auto;  
+        padding: 1rem;
+    }
+    
+    .wrapper {
+        width: 100%; 
+        min-width: 100%; 
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        max-height: auto;
+    }
+    
+    aside{
+        width: 180px;
+        max-width: 100px;
+    }
+    
+    
+    .sidebar-nav{
+        padding: 0.5rem 0;
+    }
+    
+    a.sidebar-link{
+        padding: .425rem 1.225rem;
+        border-left: 2px solid transparent;
+    }
+    
+    .sidebar-link i {
+        font-size: 1.3rem;
+        margin-right: .55rem;
+    }
+    
+    a.sidebar-link:hover{
+        border-left: 2px solid #05e25a;
+    }
+    
+    .profile-img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    h3{
+        color: ghostwhite;
+        font-style: 1rem;
+        padding-top: 20px;
+    }
+
+
+}

@@ -32,6 +32,8 @@ new Chart(document.getElementById("doughnut-chart"), {
 
 
 
+
+
 async function loadContent(url) {
   const response = await fetch(url);
   const content = await response.text();
