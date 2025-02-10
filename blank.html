@@ -61,6 +61,18 @@
               <i class="bx bxs-bug-alt"></i>
               <span>Auth</span>
             </a>
+            <ul
+              id="auth"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link"> Login </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link"> Register </a>
+              </li>
+            </ul>
           </li>
 
           <!-- nav link with multi step dropdown -->
@@ -76,6 +88,35 @@
               <i class="bx bxs-bar-chart-alt-2"></i>
               <span>Multi links</span>
             </a>
+            <ul
+              id="multi"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a
+                  href="#"
+                  class="sidebar-link collapsed has-dropdown"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#multi-two"
+                  aria-expanded="false"
+                  aria-controls="multi-two"
+                >
+                  Two Links
+                </a>
+                <ul
+                  id="multi-two"
+                  class="sidebar-dropdown list-unstyled collapse"
+                >
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Link 1</a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Link 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
           <li class="sidebar-item">
             <a href="#" class="sidebar-link">
@@ -153,122 +194,7 @@
           <div class="container-fluid">
             <div class="mb-3">
               <h3 class="fw-bold fs-4 mb-3">Dashboard</h3>
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <div class="card shadow">
-                    <img src="/images/card1.jpg" alt="">
-                    <div class="card-body py-4">
-                      <h6 class="mb-2 fw-bold">NIN Services</h6>
-                      <p class="fw-bold mb-2">Lorem ipsum dolor sit.</p>
-                      <div class="mb-0">
-                        <span class="fw-light"> Since Last Week </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="card shadow">
-                    <img src="/images/card2.jpg" alt="">
-                    <div class="card-body py-4">
-                      <h6 class="mb-2 fw-bold">Business Services</h6>
-                      <p class="fw-bold mb-2">Lorem, ipsum dolor.</p>
-                      <div class="mb-0">
-                        <span class="fw-light"> Since Last Week </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="card shadow">
-                    <img src="/images/card3.jpg" alt="">
-                    <div class="card-body py-4">
-                      <h6 class="mb-2 fw-bold">Academic DocUMENTATION</h6>
-                      <p class="fw-bold mb-2">Lorem, ipsum dolor.</p>
-                      <div class="mb-0">
-                        <span class="fw-light"> Since Last Week </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="row">
-                <div class="col-12 col-md-7 table-container">
-                  <h3 class="fw-bold fs-4 my-3">Users</h3>
-                  <table class="table table-striped">
-                    <thead>
-                      <tr class="highlight">
-                        <th scope="col">S/N</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">5</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">6</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">7</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">8</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">9</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">10</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="col-12 col-md-5">
-                  <h3 class="fw-bold fs-4 my-3">Reports Overview</h3>
-                  <canvas id="doughnut-chart" width="800" height="450"></canvas>
-                </div>
-              </div>
             </div>
           </div>
         </main>

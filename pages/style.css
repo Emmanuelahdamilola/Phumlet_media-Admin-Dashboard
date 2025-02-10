@@ -45,8 +45,7 @@ body{
 }
 
 aside{
-    width: 260px;
-    min-width: 160px;
+    width: 100px;
     transition: all 0.25s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -91,7 +90,7 @@ h3{
 }
 
 
-@media(max-width:768px){
+@media(max-width:767px){
     .container {  
        padding: 1rem;
     }
@@ -107,10 +106,89 @@ h3{
     }
     
     aside{
-        width: 180px;
-        max-width: 100px;
+        width: 70px;
+        min-width: 70px;
+    }
+    .profile-img{
+        height: 40px;
+        width: 40px;
+        border: 2px solid white;
+        border-radius: 50px;
     }
     
+    h3{
+        font-style: 1px !important;
+    }
+    
+    .sidebar-nav{
+        padding: 0.5rem 0;
+    }
+    
+    a.sidebar-link{
+        padding: .425rem 1.225rem;
+        border-left: 2px solid transparent;
+    }
+    
+    .sidebar-link i {
+        font-size: 1.3rem;
+        margin-right: .55rem;
+    }
+    a.sidebar-link span{
+        display: none;
+    }
+    
+    a.sidebar-link:hover{
+        border-left: 2px solid #05e25a;
+    }
+    
+    .profile-img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    h3{
+        color: ghostwhite;
+        font-style: 1rem;
+        padding-top: 20px;
+    }
+
+
+}
+
+
+@media(min-width:768px){
+    .container {  
+       padding: 1rem;
+    }
+    
+    .wrapper {
+        height: 50%;
+        width: 100%; 
+        min-width: 100%; 
+    }
+    
+    .main{
+        min-height: 50vh;
+    }
+    
+    aside{
+        min-width: 200px;
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .profile-img{
+        height: 40px;
+        width: 40px;
+        border: 2px solid white;
+        border-radius: 50px;
+    }
+    
+    h3{
+        font-style: 1px !important;
+    }
     
     .sidebar-nav{
         padding: 0.5rem 0;
@@ -129,17 +207,7 @@ h3{
     a.sidebar-link:hover{
         border-left: 2px solid #05e25a;
     }
-    
-    .profile-img{
-        height: 50px;
-        width: 50px;
-    }
-    
-    h3{
-        color: ghostwhite;
-        font-style: 1rem;
-        padding-top: 20px;
-    }
+
 
 
 }
